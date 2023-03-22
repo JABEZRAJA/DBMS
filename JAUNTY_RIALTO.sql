@@ -1,0 +1,30 @@
+CREATE DATABASE IF NOT EXISTS JAUNTY_RIALTO;
+USE JAUNTY_RIALTO;
+
+CREATE TABLE IF NOT EXISTS user(
+`email_id` VARCHAR(100) PRIMARY KEY,
+name VARCHAR(50),
+password VARCHAR(50),
+phone_number VARCHAR(20)
+);
+
+CREATE TABLE IF NOT EXISTS products(
+`product_id` VARCHAR(50) PRIMARY KEY,
+price VARCHAR(50),
+description VARCHAR(50),
+Product_name VARCHAR(50),
+images VARCHAR(50),
+features VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS checkout(
+`product_id` VARCHAR(50) PRIMARY KEY,
+price VARCHAR(50),
+description VARCHAR(50),
+Product_name VARCHAR(50),
+images VARCHAR(50),
+features VARCHAR(50)
+);
+
+
+
